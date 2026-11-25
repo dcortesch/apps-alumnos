@@ -87,6 +87,9 @@ input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:40px;heigh
 @media (display-mode:standalone){.top{padding-top:calc(14px + env(safe-area-inset-top))}}
 .qcard{animation:slidein .45s cubic-bezier(.2,.9,.3,1.1)}@keyframes slidein{from{opacity:0;transform:translateX(40px)}to{opacity:1;transform:none}}
 .step .visbox{margin:8px auto}.exq{font-size:22px}
+.who{max-width:640px}.mainwho{font-size:28px;min-height:84px;width:100%;justify-content:center;margin:10px 0 18px}
+.whol{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin:8px 0 18px}.wf{display:grid;gap:10px;text-align:left;margin-top:10px}.wf label{font-weight:700}
+.wf input{font:inherit;font-size:20px;padding:14px 16px;border-radius:16px;border:3px solid var(--line);background:var(--card);color:var(--ink);min-height:56px}.wf input:focus{outline:none;border-color:var(--cta)}.wf button{justify-content:center}
 .endbtn{display:inline-flex;align-items:center;gap:6px;min-height:48px;border-radius:14px;border:2px solid currentColor;background:rgba(255,255,255,.15);color:inherit;font-weight:800;padding:6px 14px;flex:none;margin-left:auto}
 .hero .endbtn{margin-left:0;color:var(--bandink)}.row.l{justify-content:flex-start;margin-top:14px}.row.sb{justify-content:space-between;align-items:center;margin:0}
 .stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;padding-block:18px}.stats.in{padding:0;margin:14px 0}
@@ -648,7 +651,7 @@ const STEPS={
  'Fracción de una cantidad':['<b>'+fr(3,4)+' de 20</b>','Divido entre el denominador: 20 : 4 = 5','Multiplico por el numerador: 5 · 3','<b class="big">= 15</b>']
 };
 
-window.APP=Object.assign({"key": "ruben-lopez", "name": "Rubén López", "sub": "Moto-Mates · Matemáticas 1.º ESO", "lang": "es", "voice": "es-ES", "rate": 0.95, "n": 8, "dec": ",", "keys": ["7", "8", "9", "⌫", "4", "5", "6", "−", "1", "2", "3", "/", "0", ","], "autoSpeak": false, "txt": {"unitRev": "Repaso", "unitRevH": "<p>Preguntas mezcladas de <b>toda la unidad</b>. ¡A por las 3 estrellas!</p>", "finalU": "Gran final", "anim": "Paso a paso", "lab": "Laboratorio", "labH": "Mueve los deslizadores y mira qué pasa.", "tapShade": "Toca los trozos para pintarlos.", "tapOrder": "Toca los números de <b>menor a mayor</b>.", "tapOrderD": "Toca los números de <b>mayor a menor</b>.", "undo": "Deshacer", "reviewT": "Repaso mezclado", "reviewH": "<p>Preguntas de <b>todas las sesiones</b> mezcladas. Es el examen final del circuito: ¡a por las 3 estrellas!</p>", "hello": "Elige una parada del circuito. Cada sesión: primero aprendes, luego practicas.", "done": "sesiones hechas", "sessions": "Sesiones del curso", "teacher": "Panel del profesor", "home": "Inicio", "session": "Sesión", "learn": "Aprende", "listen": "Escuchar", "practice": "¡A practicar!", "hint": "Pista", "check": "Comprobar", "next": "Siguiente", "praise": ["¡Muy bien!", "¡Correcto!", "¡Genial!", "¡Así se hace!"], "again": "Casi. Inténtalo otra vez.", "sol": "La respuesta es", "great": "¡Gran sesión!", "good": "¡Bien hecho!", "keep": "¡Sigue practicando!", "points": "puntos", "repeat": "Repetir", "nextS": "Siguiente sesión", "menu": "Volver al menú", "example": "Ejemplo resuelto paso a paso", "finishBtn": "Terminar", "continue": "Seguir", "kCourse": "del curso", "kStars": "estrellas", "kToday": "hoy", "kRight": "aciertos hoy", "kStreak": "días seguidos", "pending": "Informes por enviar", "holdTeacher": "Toca 3 veces para abrir", "triesLeft": "Intentos", "h2mc": "He quitado opciones que no son. Elige entre las que quedan.", "h2ord": "El primero es", "h2shade": "Tienes que pintar", "h2range": "La respuesta está entre", "and": "y", "tooMany": "Has pintado demasiados.", "tooFew": "Te faltan trozos por pintar.", "tooBig": "Te has pasado: tiene que salir menos.", "tooSmall": "Te has quedado corto: tiene que salir más.", "noWorry": "No pasa nada: mira la solución y lo volverás a ver en otra ronda.", "kFirst": "a la primera", "kHints": "pistas", "kTime": "tiempo", "kTries": "veces hecha", "review": "Repasa lo que has fallado", "byeGood": "¡Buen trabajo! Has terminado por hoy.", "byeEmpty": "Has terminado por hoy.", "kSessions": "sesiones", "kAnswers": "preguntas", "sending": "Enviando el informe a tu profe…", "shareBtn": "Compartir informe", "copied": "Informe copiado.", "notSent": "Sin conexión: el informe se enviará solo cuando haya internet.", "sent": "Informe enviado a tu profe."}, "report": {"url": "https://docs.google.com/forms/d/e/1FAIpQLSeZs5FiLe1Q8KbWOyBYAPT-LTYNucO-Ucq6_pDcRf0dmIhcag/formResponse", "alumno": "entry.1258340571", "resumen": "entry.2021554612", "datos": "entry.866293923"}},{sessions:SES_RUBEN,units:UNITS_RUBEN,hero:p=>{const N=Math.min(16,window.APP.sessions.length),W=600,H=260,pts=[];for(let i=0;i<N;i++){const t=i/(N-1);pts.push([40+t*520,190-Math.sin(t*Math.PI*2)*50-t*40])}
+window.APP=Object.assign({"key": "ruben-lopez", "name": "Rubén López", "sub": "Moto-Mates · Matemáticas 1.º ESO", "lang": "es", "voice": "es-ES", "rate": 0.95, "n": 8, "dec": ",", "keys": ["7", "8", "9", "⌫", "4", "5", "6", "−", "1", "2", "3", "/", "0", ","], "autoSpeak": false, "txt": {"unitRev": "Repaso", "unitRevH": "<p>Preguntas mezcladas de <b>toda la unidad</b>. ¡A por las 3 estrellas!</p>", "finalU": "Gran final", "anim": "Paso a paso", "lab": "Laboratorio", "labH": "Mueve los deslizadores y mira qué pasa.", "tapShade": "Toca los trozos para pintarlos.", "tapOrder": "Toca los números de <b>menor a mayor</b>.", "tapOrderD": "Toca los números de <b>mayor a menor</b>.", "undo": "Deshacer", "reviewT": "Repaso mezclado", "reviewH": "<p>Preguntas de <b>todas las sesiones</b> mezcladas. Es el examen final del circuito: ¡a por las 3 estrellas!</p>", "hello": "Elige una parada del circuito. Cada sesión: primero aprendes, luego practicas.", "done": "sesiones hechas", "sessions": "Sesiones del curso", "teacher": "Panel del profesor", "home": "Inicio", "session": "Sesión", "learn": "Aprende", "listen": "Escuchar", "practice": "¡A practicar!", "hint": "Pista", "check": "Comprobar", "next": "Siguiente", "praise": ["¡Muy bien!", "¡Correcto!", "¡Genial!", "¡Así se hace!"], "again": "Casi. Inténtalo otra vez.", "sol": "La respuesta es", "great": "¡Gran sesión!", "good": "¡Bien hecho!", "keep": "¡Sigue practicando!", "points": "puntos", "repeat": "Repetir", "nextS": "Siguiente sesión", "menu": "Volver al menú", "usingApp": "usando la app de", "changeWho": "Cambiar de alumno", "whoQ": "¿Quién eres?", "whoUsed": "Ya han entrado en este iPad:", "whoOther": "¿Eres otro alumno? Escribe tu nombre y apellido (y tu grupo):", "whoPh": "Ej.: Sara Torres 1.º E", "whoGo": "Entrar", "whoShort": "Escribe tu nombre completo, por favor.", "example": "Ejemplo resuelto paso a paso", "finishBtn": "Terminar", "continue": "Seguir", "kCourse": "del curso", "kStars": "estrellas", "kToday": "hoy", "kRight": "aciertos hoy", "kStreak": "días seguidos", "pending": "Informes por enviar", "holdTeacher": "Toca 3 veces para abrir", "triesLeft": "Intentos", "h2mc": "He quitado opciones que no son. Elige entre las que quedan.", "h2ord": "El primero es", "h2shade": "Tienes que pintar", "h2range": "La respuesta está entre", "and": "y", "tooMany": "Has pintado demasiados.", "tooFew": "Te faltan trozos por pintar.", "tooBig": "Te has pasado: tiene que salir menos.", "tooSmall": "Te has quedado corto: tiene que salir más.", "noWorry": "No pasa nada: mira la solución y lo volverás a ver en otra ronda.", "kFirst": "a la primera", "kHints": "pistas", "kTime": "tiempo", "kTries": "veces hecha", "review": "Repasa lo que has fallado", "byeGood": "¡Buen trabajo! Has terminado por hoy.", "byeEmpty": "Has terminado por hoy.", "kSessions": "sesiones", "kAnswers": "preguntas", "sending": "Enviando el informe a tu profe…", "shareBtn": "Compartir informe", "copied": "Informe copiado.", "notSent": "Sin conexión: el informe se enviará solo cuando haya internet.", "sent": "Informe enviado a tu profe."}, "report": {"url": "https://docs.google.com/forms/d/e/1FAIpQLSeZs5FiLe1Q8KbWOyBYAPT-LTYNucO-Ucq6_pDcRf0dmIhcag/formResponse", "alumno": "entry.1258340571", "resumen": "entry.2021554612", "datos": "entry.866293923"}},{sessions:SES_RUBEN,units:UNITS_RUBEN,hero:p=>{const N=Math.min(16,window.APP.sessions.length),W=600,H=260,pts=[];for(let i=0;i<N;i++){const t=i/(N-1);pts.push([40+t*520,190-Math.sin(t*Math.PI*2)*50-t*40])}
  const path=pts.map((q,i)=>(i?'L':'M')+q[0].toFixed(1)+' '+q[1].toFixed(1)).join('');const k=Math.round(p*(N-1)),b=pts[Math.min(k,N-1)];
  let s=`<path d="M0 ${H}L0 150Q150 90 300 140T600 110V${H}Z" fill="rgba(255,255,255,.08)"/><path d="${path}" stroke="#0b2236" stroke-width="34" fill="none" stroke-linecap="round" stroke-linejoin="round"/><path d="${path}" stroke="#ffd166" stroke-width="3" stroke-dasharray="14 12" fill="none"/>`;
  pts.forEach((q,i)=>{const d=i<k||(i===k&&p>=1);s+=`<line x1="${q[0]}" y1="${q[1]-14}" x2="${q[0]}" y2="${q[1]-44}" stroke="#e2e8f0" stroke-width="3"/><path d="M${q[0]} ${q[1]-44}h22l-6 7l6 7h-22z" fill="${d?'#22c55e':'rgba(255,255,255,.35)'}"/>`+`<text x="${q[0]+9}" y="${q[1]-36}" font-size="9" font-weight="800" fill="#0b2236" text-anchor="middle">${window.APP.sessions.length>16?"":i+1}</text>`});
@@ -669,9 +672,13 @@ const A=window.APP, S=A.sessions, L=A.txt, $=s=>document.querySelector(s), app=$
    s.g.push(()=>{const p=pick(gl),toEs=Math.random()<.6;const ans=toEs?p[1]:p[0];const others=shuffle(pool.filter(x=>x!==p).map(x=>toEs?x[1]:x[0]));
      return{q:toEs?`How do you say <b>«${p[0]}»</b> in Spanish?`:`¿Cómo se dice <b>«${p[1]}»</b> en inglés?`,es:toEs?`¿Cómo se dice «${p[0]}» en español?`:`How do you say «${p[1]}» in English?`,vis:'',type:'mc',opts:mc(ans,others),ans,hint:'Look at the glossary of this session. · Mira el glosario.',exp:`<b>${p[0]}</b> = <b>${p[1]}</b>`}})})}
 }
-const KEY='app-'+A.key;
-let store={best:{},pct:{},att:{},log:[],days:{},lastEnd:null,outbox:[],sent:0};
-try{const raw=localStorage.getItem(KEY);if(raw)store=Object.assign(store,JSON.parse(raw))}catch(e){}
+const BASE='app-'+A.key;let WHO=A.name,KEY=BASE;
+const blank=()=>({best:{},pct:{},att:{},log:[],days:{},lastEnd:null,outbox:[],sent:0});
+let store=blank();
+const ls={get:k=>{try{return localStorage.getItem(k)}catch(e){return null}},set:(k,v)=>{try{localStorage.setItem(k,v)}catch(e){}}};
+function profiles(){try{return JSON.parse(ls.get(BASE+'-profiles')||'[]')}catch(e){return[]}}
+function login(name){WHO=name;KEY=name===A.name?BASE:BASE+'::'+name;store=blank();try{const raw=ls.get(KEY);if(raw)store=Object.assign(store,JSON.parse(raw))}catch(e){}
+  ls.set(BASE+'-who',name);if(name!==A.name){const p=profiles().filter(x=>x!==name);p.unshift(name);ls.set(BASE+'-profiles',JSON.stringify(p.slice(0,30)))}}
 const save=()=>{try{localStorage.setItem(KEY,JSON.stringify(store))}catch(e){}scormSave()};
 const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const ico={
@@ -714,7 +721,7 @@ function scormEnd(){if(!SC||SC.ended)return;const t=Math.round((Date.now()-SC.t0
 
 // ---------- Envío de informes al profesor (Google Forms) ----------
 async function sendOne(r){const R2=A.report;if(!R2||!R2.url)throw new Error('sin destino');
- const body=new URLSearchParams();body.append(R2.alumno,A.name);body.append(R2.resumen,r.txt);body.append(R2.datos,JSON.stringify(r.data));
+ const body=new URLSearchParams();body.append(R2.alumno,WHO+(WHO!==A.name?' · app '+A.name:''));body.append(R2.resumen,r.txt);body.append(R2.datos,JSON.stringify(r.data));
  await fetch(R2.url,{method:'POST',mode:'no-cors',body});}
 async function flush(){if(!store.outbox.length||!navigator.onLine)return 0;let n=0;
  for(const r of store.outbox.slice()){try{await sendOne(r);store.outbox.shift();store.sent++;n++}catch(e){break}}save();return n}
@@ -730,7 +737,7 @@ function unitStats(u){const ss=S.filter(s=>s.u===u),done=ss.filter(s=>store.pct[
 function home(){
   const B=s=>store.best[s.t]||0;const tot=S.reduce((a,s)=>a+B(s),0),done=S.filter(s=>store.pct[s.t]!=null).length,d=day(),str=streak();let lastU=null;
   const nextI=Math.max(0,S.findIndex(s=>store.pct[s.t]==null));
-  app.innerHTML=`<header class="hero band"><div class="hero-t"><p class="kick">${esc(A.sub)}</p><h1>${esc(A.name)}</h1>
+  app.innerHTML=`<header class="hero band"><div class="hero-t"><p class="kick">${esc(A.sub)}</p><h1>${esc(WHO)}</h1>${WHO!==A.name?`<p class="kick">${L.usingApp} ${esc(A.name)}</p>`:''}
    <p class="lead">${L.hello}</p><div class="row l"><button class="cta big" id="cont">${L.continue} · ${nextI+1}</button>${endBtn()}</div></div>
    <div class="hero-v">${A.hero(done/S.length)}</div></header>
    <section class="band stats"><div class="kpi"><b>${pc(done,S.length)} %</b><span>${L.kCourse}</span><i class="bar"><i style="width:${pc(done,S.length)}%"></i></i></div>
@@ -740,8 +747,8 @@ function home(){
     <div class="kpi"><b>${str}</b><span>${L.kStreak}</span></div></section>
    <main class="band"><h2>${L.sessions}</h2>${S.map((s,i)=>{let h='';if(s.u!==lastU){const us=unitStats(s.u);h=(lastU!==null?'</div>':'')+`<div class="unith"><h3 class="unit">${esc(s.u||'')}</h3><span class="up">${us.done}/${us.n} · ${us.st}★${us.done?` · ${us.av} %`:''}</span><i class="bar"><i style="width:${pc(us.done,us.n)}%"></i></i></div><div class="grid">`;lastU=s.u}
      const p=store.pct[s.t];return h+`<button class="ses ${s.mix?'rev':''} ${store.pct[s.t]!=null?'done':''}" data-i="${i}" style="--c:${s.mix?'#0f172a':PAL[i%8]}"><span class="n">${s.mix?'★':i+1}</span><span class="tt">${esc(s.t)}${s.es?`<i>${esc(s.es)}</i>`:''}</span><span class="ss">${stars(B(s))}${p!=null?`<em>${p} %</em>`:''}</span></button>`}).join('')}</div></main>
-   <footer class="band foot"><span class="small">${store.outbox.length?`${L.pending}: ${store.outbox.length}`:''}</span><button class="ghost" id="prof">${L.teacher}</button></footer>`;
-  app.querySelectorAll('.ses').forEach(b=>b.onclick=()=>learn(+b.dataset.i));$('#cont').onclick=()=>learn(nextI);bindEnd();
+   <footer class="band foot"><button class="ghost" id="who">${L.changeWho}</button><span class="small">${store.outbox.length?`${L.pending}: ${store.outbox.length}`:''}</span><button class="ghost" id="prof">${L.teacher}</button></footer>`;
+  $('#who').onclick=whoScreen;app.querySelectorAll('.ses').forEach(b=>b.onclick=()=>learn(+b.dataset.i));$('#cont').onclick=()=>learn(nextI);bindEnd();
   // panel del profesor: tocar 3 veces seguidas
   const pb=$('#prof');let taps=0,tm;pb.onclick=()=>{taps++;clearTimeout(tm);tm=setTimeout(()=>{taps=0},1200);if(taps>=3){taps=0;teacher()}else pb.textContent=L.holdTeacher+' ('+taps+'/3)'};
   window.scrollTo(0,0)}
@@ -852,21 +859,22 @@ function buildReport(){const since=store.lastEnd?new Date(store.lastEnd):new Dat
   const units=[...new Set(S.map(s=>s.u))].map(u=>{const x=unitStats(u);return{u,done:x.done,n:x.n,av:x.av}});
   const fails=L2.flatMap(r=>r.w.map(w=>`[${r.t}] ${w}`));
   const fecha=now.toLocaleString('es-ES',{dateStyle:'full',timeStyle:'short'});
-  const txt=[`INFORME · ${A.name} · ${fecha}`,'',
+  const txt=[`INFORME · ${WHO}${WHO!==A.name?` (usando la app de ${A.name})`:''} · ${fecha}`,'',
    `Trabajo de esta vez: ${L2.length} sesión(es), ${n} preguntas, ${pc(ok1,n)} % acertadas a la primera, ${h} pistas pedidas, ${mins(dur)} min.`,
    ...L2.slice().reverse().map(r=>`  · ${r.t}${r.partial?' (sin terminar)':''}: ${String(r.sc).replace('.',',')}/${r.n} (${r.p} %), ${r.ok1} a la primera, ${r.h} pistas, ${fmtT(r.dur)}`),'',
    `Progreso del curso: ${done}/${S.length} sesiones superadas (${pc(done,S.length)} %), ${stars} estrellas de ${S.length*3}.`,
    ...units.map(x=>`  · ${x.u}: ${x.done}/${x.n}${x.done?` · media ${x.av} %`:''}`),'',
    fails.length?'Fallos (pregunta → solución):':'Sin fallos en esta tanda.',...fails.slice(0,40).map(f=>'  · '+f)].join('\n');
-  return{txt,data:{alumno:A.name,app:A.key,fecha:now.toISOString(),desde:store.lastEnd,sesiones:L2,curso:{hechas:done,total:S.length,estrellas:stars,unidades:units}},n,ok1,h,dur,ses:L2.length}}
+  return{txt,data:{alumno:WHO,app:A.key,fecha:now.toISOString(),desde:store.lastEnd,sesiones:L2,curso:{hechas:done,total:S.length,estrellas:stars,unidades:units}},n,ok1,h,dur,ses:L2.length}}
 async function terminate(){if(Q&&!Q.saved){savePartial()}
   const rep=buildReport();store.outbox.push({txt:rep.txt,data:rep.data});store.lastEnd=new Date().toISOString();save();
   app.innerHTML=`<section class="band endb"><div class="card end" style="--c:var(--cta)"><p class="tag">${L.finishBtn}</p><h2>${rep.ses?L.byeGood:L.byeEmpty}</h2>
    <div class="stats in"><div class="kpi"><b>${rep.ses}</b><span>${L.kSessions}</span></div><div class="kpi"><b>${rep.n}</b><span>${L.kAnswers}</span></div><div class="kpi"><b>${pc(rep.ok1,rep.n)} %</b><span>${L.kFirst}</span></div><div class="kpi"><b>${mins(rep.dur)} min</b><span>${L.kTime}</span></div></div>
    <p class="sendst" id="sst">${L.sending}</p>
-   <div class="row c"><button class="ghost big" id="shr">${L.shareBtn}</button><button class="cta big" id="hm">${L.menu}</button></div></div></section>`;
+   <div class="row c"><button class="ghost big" id="shr">${L.shareBtn}</button><button class="ghost big" id="oth">${L.changeWho}</button><button class="cta big" id="hm">${L.menu}</button></div></div></section>`;
+  $('#oth').onclick=whoScreen;
   if(rep.ses)confetti(50);$('#hm').onclick=home;
-  $('#shr').onclick=async()=>{try{if(navigator.share){await navigator.share({title:'Informe '+A.name,text:rep.txt});return}}catch(e){}try{await navigator.clipboard.writeText(rep.txt);$('#sst').textContent=L.copied}catch(e){}};
+  $('#shr').onclick=async()=>{try{if(navigator.share){await navigator.share({title:'Informe '+WHO,text:rep.txt});return}}catch(e){}try{await navigator.clipboard.writeText(rep.txt);$('#sst').textContent=L.copied}catch(e){}};
   const n=await flush();const el=$('#sst');if(el)el.innerHTML=store.outbox.length?`<span class="warn">${L.notSent}</span>`:`<span class="okk">✔ ${L.sent}</span>`;scormEnd()}
 
 // ---------- Panel del profesor ----------
@@ -876,7 +884,7 @@ function teacher(){const d=document.createElement('div');d.className='modal';
   const mx=Math.max(1,...days.map(x=>x[1].s));
   const units=[...new Set(S.map(s=>s.u))].map(u=>[u,unitStats(u)]);
   const failC={};all.forEach(r=>r.w.forEach(()=>{failC[r.t]=(failC[r.t]||0)+1}));const topF=Object.entries(failC).sort((a,b)=>b[1]-a[1]).slice(0,6);
-  d.innerHTML=`<div class="mbox"><div class="row sb"><h2>Panel del profesor · ${esc(A.name)}</h2><button class="cta" id="cl">Cerrar</button></div>
+  d.innerHTML=`<div class="mbox"><div class="row sb"><h2>Panel del profesor · ${esc(WHO)}${WHO!==A.name?` <span class="small">(app ${esc(A.name)})</span>`:''}</h2><button class="cta" id="cl">Cerrar</button></div>
    <div class="stats in"><div class="kpi"><b>${pc(done,S.length)} %</b><span>curso (${done}/${S.length})</span></div><div class="kpi"><b>${mins(dur)} min</b><span>tiempo total</span></div><div class="kpi"><b>${n}</b><span>preguntas</span></div><div class="kpi"><b>${pc(ok1,n)} %</b><span>a la primera</span></div><div class="kpi"><b>${h}</b><span>pistas pedidas</span></div><div class="kpi"><b>${store.sent}</b><span>informes enviados${store.outbox.length?` · ${store.outbox.length} pendientes`:''}</span></div></div>
    <h3>Minutos por día (últimas 2 semanas)</h3><div class="days">${days.map(([l,x])=>`<div><i style="height:${Math.round(x.s/mx*100)}%" title="${mins(x.s)} min · ${x.a} preguntas"></i><span>${l}</span></div>`).join('')}</div>
    <h3>Progreso por unidad</h3><table class="ut"><tr><th>Unidad</th><th>Sesiones</th><th>Estrellas</th><th>Media</th><th></th></tr>${units.map(([u,x])=>`<tr><td>${esc(u)}</td><td class="r">${x.done}/${x.n}</td><td class="r">${x.st}</td><td class="r">${x.done?x.av+' %':'—'}</td><td style="width:30%"><i class="bar"><i style="width:${pc(x.done,x.n)}%"></i></i></td></tr>`).join('')}</table>
@@ -886,10 +894,21 @@ function teacher(){const d=document.createElement('div');d.className='modal';
   document.body.appendChild(d);
   d.querySelector('#cl').onclick=()=>{d.remove();home()};
   d.querySelector('#snd').onclick=async()=>{const rep=buildReport();store.outbox.push({txt:rep.txt,data:rep.data});store.lastEnd=new Date().toISOString();save();await flush();d.querySelector('#msg').textContent=store.outbox.length?'No hay conexión: se enviará más tarde.':'Informe enviado al formulario.'};
-  d.querySelector('#cp').onclick=()=>{const t='Informe '+A.name+'\n'+all.map(r=>`${new Date(r.d).toLocaleString('es-ES')} | ${r.t} | ${r.p} % | 1.ª ${r.ok1}/${r.n} | pistas ${r.h} | ${fmtT(r.dur)}${r.w.length?' | Fallos: '+r.w.join('; '):''}`).join('\n');
+  d.querySelector('#cp').onclick=()=>{const t='Informe '+WHO+'\n'+all.map(r=>`${new Date(r.d).toLocaleString('es-ES')} | ${r.t} | ${r.p} % | 1.ª ${r.ok1}/${r.n} | pistas ${r.h} | ${fmtT(r.dur)}${r.w.length?' | Fallos: '+r.w.join('; '):''}`).join('\n');
     try{navigator.clipboard.writeText(t).then(()=>d.querySelector('#msg').textContent='Copiado.',()=>d.querySelector('#msg').textContent='No se ha podido copiar.')}catch(e){}};
-  let arm=false;d.querySelector('#rs').onclick=e=>{if(!arm){arm=true;e.target.textContent='Pulsa otra vez para borrar todo';return}store={best:{},pct:{},att:{},log:[],days:{},lastEnd:null,outbox:[],sent:0};save();d.remove();home()}}
-home();
+  let arm=false;d.querySelector('#rs').onclick=e=>{if(!arm){arm=true;e.target.textContent='Pulsa otra vez para borrar todo';return}store=blank();save();d.remove();home()}}
+// ---------- ¿Quién eres? ----------
+function whoScreen(){if(Q&&!Q.saved)savePartial();const ps=profiles();
+  app.innerHTML=`<section class="band endb"><div class="card end who" style="--c:var(--cta)"><p class="tag">${esc(A.sub)}</p><h2>${L.whoQ}</h2>
+   <button class="cta big mainwho" id="me">${esc(A.name)}</button>
+   ${ps.length?`<p class="small">${L.whoUsed}</p><div class="whol">${ps.map(p=>`<button class="ghost" data-p="${esc(p)}">${esc(p)}</button>`).join('')}</div>`:''}
+   <form id="wf" class="wf"><label for="wn">${L.whoOther}</label><input id="wn" autocomplete="off" autocapitalize="words" maxlength="40" placeholder="${L.whoPh}"><button class="ghost big" type="submit">${L.whoGo}</button></form>
+   <p class="small warn" id="wm"></p></div></section>`;
+  $('#me').onclick=()=>{login(A.name);home()};
+  app.querySelectorAll('.whol button').forEach(b=>b.onclick=()=>{login(b.dataset.p);home()});
+  $('#wf').addEventListener('submit',e=>{e.preventDefault();let n=$('#wn').value.trim().replace(/\s+/g,' ');if(n.length<3){$('#wm').textContent=L.whoShort;return}
+    n=n.split(' ').map(w=>w?w[0].toUpperCase()+w.slice(1):w).join(' ');if(n.toLowerCase()===A.name.toLowerCase())n=A.name;login(n);home()});window.scrollTo(0,0)}
+{const w=ls.get(BASE+'-who');if(w){login(w);home()}else whoScreen()}
 }
 
 </script><script>if('serviceWorker' in navigator&&location.protocol==='https:')navigator.serviceWorker.register('sw.js').catch(()=>{})</script></body></html>
