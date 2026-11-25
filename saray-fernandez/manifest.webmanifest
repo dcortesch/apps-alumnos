@@ -1,0 +1,1 @@
+{"name": "Saray Fernández", "short_name": "Saray Fernández", "start_url": "./", "scope": "./", "display": "standalone", "orientation": "any", "background_color": "#f4f0ff", "theme_color": "#5b21b6", "icons": [{"src": "icon-180.png", "sizes": "180x180", "type": "image/png"}, {"src": "icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable"}]}
