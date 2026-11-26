@@ -39,7 +39,7 @@ const card=(a,cls)=>{const ini=a.full.split(' ').slice(0,2).map(w=>w[0]).join(''
   if(m){try{d=await VAULT.open('./','profe-k')}catch(e){}}else{try{if(localStorage.getItem('profe-k'))d=await VAULT.open('./','profe-k')}catch(e){}}
   if(!d){M.innerHTML='<div class="lock"><h2 style="border:0;padding:0">Página del profesor</h2><p>Ábrela con tu <b>enlace de profesor</b>. Los alumnos entran con su enlace personal.</p></div>';return}
   let c=null;try{c=await fetch('1eso-e/config.json?t='+Date.now(),{cache:'no-store'}).then(r=>r.json())}catch(e){}
-  M.innerHTML=`${c?`<p class="cfg">🔓 Unidades abiertas en la app de 1.º E: <b>${c.desbloqueadas}</b> de 8</p>`:''}
+  M.innerHTML=`${c?`<p class="cfg">🔓 Unidades abiertas en la app de 1.º E: <b>${c.desbloqueadas}</b> de 9</p>`:''}
    <h2>1.º ESO E · ${d.e.length} alumnos</h2><div class="grid">${d.e.map(a=>card(a,a.nivel==='mínimos'?'min':a.nivel==='app propia'?'own':'')).join('')}</div>
    <h2>3.º ESO A</h2><div class="grid">${d.o.map(a=>card(a,'')).join('')}</div>
    <p style="font-size:14px;color:#64748b;margin-top:24px">Borde amarillo: versión de mínimos · borde rosa: app propia. Cada botón abre la app de ese alumno con sus estadísticas.</p>`})();
